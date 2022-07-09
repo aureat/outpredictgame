@@ -1,0 +1,153 @@
+body {
+  background-color: #202124;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.user-info {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #303134;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 1px 6px 0 #171717;
+  overflow: hidden;
+}
+
+.search-input {
+  display: flex;
+  padding: 18px 25px;
+  align-items: center;
+  background-color: #37373b;
+}
+
+.input-icon {
+  background: url("https://www.google.com/images/searchbox/desktop_searchbox_sprites318_hr.webp")
+    no-repeat 0 0;
+  background-size: 26px;
+  min-height: 26px;
+  min-width: 26px;
+  height: 26px;
+  width: 26px;
+  margin-right: 10px;
+}
+
+.input-text {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+  flex: 1;
+}
+
+.input-text .question {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.input-text .prediction {
+  position: relative;
+}
+
+.input-text .prediction .resizer {
+  display: block;
+  padding: 8px 14px 10px;
+  font-size: 15px;
+  line-height: 1;
+  min-width: 120px;
+  max-width: 300px;
+  visibility: hidden;
+}
+
+.input-text .prediction input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: none;
+  padding: 8px 14px 10px;
+  background-color: #3c3d41;
+  font-style: italic;
+  color: white;
+  line-height: 1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.input-text .prediction input:focus {
+  outline: none;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+}
+
+.result-icon {
+  background: url("https://www.google.com/images/searchbox/desktop_searchbox_sprites318_hr.webp")
+    no-repeat 0 0;
+  background-size: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.result-text {
+  font-size: 16px;
+  padding: 6px 0;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notguessed {
+  display: inline-block;
+  min-width: 60px;
+  height: 28px;
+  border-radius: 5px;
+  background: #3c3d41;
+  margin: 0;
+  text-align: center;
+}
+
+.guessed {
+  display: inline-block;
+  min-width: 40px;
+  height: 28px;
+  border-radius: 5px;
+  background: #6a89ff;
+  padding: 0 10px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
